@@ -17,6 +17,9 @@ app.use('/api/auth', authRoutes);
 app.use('/api/student', studentRoutes);
 app.use('/api/subject', subjectsRoutes);
 
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from the backend API!' });
+});
 
 
 module.exports = app;
